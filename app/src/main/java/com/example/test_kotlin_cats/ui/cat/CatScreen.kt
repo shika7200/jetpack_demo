@@ -44,7 +44,7 @@ fun CatScreen(
             LazyColumn(modifier = modifier.fillMaxSize()) {
                 items(uiState.cats) { cat ->
                     Text(
-                        text = "Cat: $cat",
+                        text = "Cat: ${cat.name}",
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(8.dp)
